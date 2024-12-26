@@ -1,0 +1,539 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  line-height: 1em;
+  vertical-align: bottom;
+}
+
+i {
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(images/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: scroll;
+}
+
+.menu {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* NavArea */
+.navArea {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  transition: .6s;
+}
+
+.close {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+.close.show {
+  display: block;
+}
+
+.open {
+  opacity: 1;
+  left: 0%;
+}
+
+.open2 {
+  opacity: 1;
+  left: 0%;
+}
+
+.navArea div {
+  position: relative;
+  width: 265px;
+  height: 149px;
+}
+
+.navArea div a {
+  font-size: 40px;
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: color .3s;
+  text-decoration: none;
+}
+
+.navArea div a:hover {
+  color: #3EDBE6;
+}
+
+.navArea div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navArea .home {
+  background: url(images/background1.jpg);
+  background-size: contain;
+}
+
+.navArea .works {
+  background: url(images/background1.jpg);
+  background-size: contain;
+}
+
+.navArea .profile {
+  background: url(images/background2.jpg);
+  background-size: contain;
+}
+
+.text {
+  z-index: 1;
+}
+
+.title {
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.sub-title {
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.more {
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 19px;
+  transition: color .3s;
+}
+
+.more:hover {
+  color: #3EDBE6;
+}
+
+.houseki {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* lists */
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper .works {
+  width: 100%;
+  height: 100vh;
+  background: url(images/background1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper .profile {
+  width: 100%;
+  height: 100vh;
+  background: url(images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide a {
+  text-decoration: none;
+  font-size: 80px;
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+}
+
+.swiper-slide a:hover {
+  color: #3EDBE6;
+  transition: color .3s;
+}
+
+.menu2 {
+  color: #393939;
+}
+
+/* works */
+
+.works-body .list-title {
+  font-family: "vdl-logojrpop-futoline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #E81BFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.works-body .lists {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  padding-bottom: 60px;
+}
+
+.works-body .list {
+  max-width: 330px;
+  max-height: 218px;
+  overlay: hidden;
+  background: #2746B1;
+  padding: 28.4px 36px;
+  margin-top: 60px;
+}
+
+.works-body .list img {
+  width: 100%;
+  height: 100%;
+  /* outline: 28.4px solid #fff; */
+}
+
+/* profile */
+
+.profile-body {
+  background-color: #2746B1;
+
+}
+
+.profile-container {
+  width: 100%;
+  height: 100vh;
+  background: url(images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-text {
+  position: absolute;
+  left: 30px;
+  top: 75%;
+}
+
+.profile-title {
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  /* margin-left: 30px; */
+}
+
+.profile-sub-title {
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  /* margin-left: 30px; */
+}
+
+.profile-body .main {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.profile-body p {
+  font-size: 16px;
+  font-family: "UD デジタル 教科書体 NK-R", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profile-body h3 {
+  margin-top: 49px;
+  font-size: 24px;
+  font-family: "gloridot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profile-body .watasi {
+  width: 221px;
+  height: 256px;
+  margin-top: 49px;
+  margin: 49px auto 0;
+}
+
+.watasi {
+  position: relative;
+  vertical-align: bottom;
+}
+
+.watasi img {
+  width: 100%;
+  height: 100%;
+}
+
+.watasi p {
+  font-size: 24px;
+}
+
+.watasi .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.profile-body .syousai .syousai-li {
+  line-height: 1.5em;
+  margin-top: 40px;
+}
+
+.profile-body .syousai-li h3 {
+  font-size: 18px;
+  font-family: "UD デジタル 教科書体 NK-R", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profile-body .rank {
+  padding-top: 16px;
+}
+
+.profile-body .rank p {
+  margin-top: 8px;
+}
+
+.profile-body .sikaku {
+  padding-top: 16px;
+}
+
+.profile-body .sikaku p {
+  margin-top: 8px;
+}
+
+.sub-sub {
+  display: none;
+}
+
+.pc-menu {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .menu {
+    display: none;
+  }
+
+  .pc-menu {
+    position: fixed;
+    display: block;
+    top: 80px;
+    right: 90px;
+    text-align: left;
+    z-index: 1000;
+  }
+
+  .pc-menu a {
+    display: block;
+    font-size: 24px;
+    font-family: "gloridot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .pc-menu a:hover {
+    color: #3EDBE6;
+  }
+
+  .pc-menu a + a {
+    margin-top: 8px;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .sub-sub {
+    font-family: "gloridot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #B00098;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .sub1 {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sub2 {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sub-title {
+    display: none;
+  }
+  
+  .more {
+    font-size: 60px;
+    margin-top: 6px;
+  }
+
+  .houseki {
+    width: 501px;
+    height: 501px;
+  }
+
+  /* lists */
+  .swiper .b {
+    font-size: 160px;
+  }
+
+  /* works */
+  .works-body .list-title {
+    font-size: 160px;
+  }
+
+  .works-body .list {
+    min-width: 550px;
+    min-height: 363px;
+  }
+
+  .works-body .lists {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 97.6px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* 
+  .works-body .lists .list {
+    transform: rotate(-15deg);
+  } */
+
+  .works-body .reverse {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  /*profile*/
+  .profile-text {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+  }
+
+  .profile-body .profile-title {
+    font-size: 80px;
+  }
+
+  .profile-body .profile-sub-title {
+    font-size: 100px;
+    margin-bottom: 80px;
+  }
+
+  .profile-body p {
+    font-size: 26px;
+  }
+
+  .profile-body h3 {
+    font-size: 60px;
+    margin-top: 120px;
+  }
+
+  .profile-body .watasi {
+    margin-top: 120px;
+  }
+
+  .watasi img {
+    width: 344px;
+    height: 399px;
+  }
+
+  .profile-body .watasi {
+    width: 344px;
+    height: 399px;
+  }
+
+  .profile-body .text-box p {
+    font-size: 60px;
+  }
+
+  .profile-body .text-box p + p {
+    margin-top: 8px;
+  }
+
+  .profile-body .syousai {
+    margin-top: 120px;
+  }
+
+  .profile-body .syousai .syousai-li {
+    margin-top: 0;
+  }
+
+  .profile-body .syousai .syousai-li + .syousai-li {
+    margin-top: 40px;
+  }
+
+  .profile-body .syousai-li h3 {
+    font-size: 30px;
+    text-shadow: 0 0 10px #fff;
+  }
+}
