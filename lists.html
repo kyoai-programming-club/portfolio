@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.typekit.net/txx3kae.css">
+  <script src="https://kit.fontawesome.com/20bb6c3324.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide works">
+        <!-- <i class="fa-solid fa-angles-left"></i> -->
+        <!-- <i class="fa-solid fa-angles-right"></i> -->
+        <i class="fa-solid fa-bars menu" id="open"></i>
+        <div class="pc-menu">
+          <a href="index.html">HOME</a>
+          <a href="works.html">WORKS</a>
+          <a href="profile.html">PROFILE</a>
+        </div>
+        <a href="works.html" class="b">WORKS</a>
+        <img src="images/houseki.png" alt="" class="houseki" width="345" height="345">
+      </div>
+      <div class="swiper-slide profile">
+        <i class="fa-solid fa-bars menu menu2" id="open2"></i>
+        <div class="pc-menu">
+          <a href="index.html">HOME</a>
+          <a href="works.html">WORKS</a>
+          <a href="profile.html">PROFILE</a>
+        </div>
+        <a href="profile.html" class="b">PROFILE</a>
+        <img src="images/houseki2.png" alt="" class="houseki" width="345" height="345">
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- メニューエリア -->
+  <div class="navArea">
+    <i class="fa-solid fa-xmark close" id="close"></i>
+    <div class="home">
+      <a href="index.html">HOME</a>
+      <img src="images/houseki.png" alt="宝石の画像" width="105" height="105">
+    </div>
+    <div class="works">
+      <a href="works.html">WORKS</a>
+      <img src="images/houseki.png" alt="宝石の画像" width="105" height="105">
+    </div>
+    <div class="profile">
+      <a href="profile.html">PRIFILE</a>
+      <img src="images/houseki2.png" alt="宝石の画像" width="105" height="105">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
